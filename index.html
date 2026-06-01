@@ -1307,7 +1307,7 @@ footer {
 }
 
 .hero-image-card{
-  width:210%;
+  width:100%;
   height:500px;
   margin-top:1.5rem;
   border-radius:18px;
@@ -1408,33 +1408,22 @@ footer {
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="hero-card">
-          <div class="hero-card-label">System Status</div>
-          <div class="stats-grid">
-            <div class="stat-item">
-              <div class="stat-number" id="stat-projects">0</div>
-              <div class="stat-label">Projects Deployed</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">24H</div>
-              <div class="stat-label">Support Response</div>
-            </div>
-            <div class="hero-image-card">
-                   <img src="NexridgeTech-Workplace.png" alt="NexridgeTech Workspace">
-              </div>
-             </div>
-          </div>
-          
+    <div class="hero-right">
+    <div class="hero-card">
+        <div class="hero-image-card">
+            <img src="NexridgeTech-Workplace.png" alt="NexridgeTech Workspace">
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <div class="scroll-hint">
+</div> <!-- hero-grid -->
+</div> <!-- container -->
+
+
+<div class="scroll-hint">
     <div class="scroll-line"></div>
     Scroll
-  </div>
+</div>
 </section>
 
 <!-- ══ MARQUEE ══ -->
@@ -1912,14 +1901,9 @@ function animateCounter(el, target, suffix = '') {
 let countersStarted = false;
 const statProjectsEl = document.getElementById('stat-projects');
 
-const counterObserver = new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting && !countersStarted) {
-    countersStarted = true;
-    animateCounter(statProjectsEl, 50, '+');
-  }
-}, { threshold: 0.5 });
-
-counterObserver.observe(statProjectsEl);
+if (statProjectsEl) {
+    counterObserver.observe(statProjectsEl);
+}
 
 /* ══ REVEAL ON SCROLL ══ */
 const reveals = document.querySelectorAll('.reveal, .reveal-left');
@@ -2062,3 +2046,7 @@ window.addEventListener('scroll', () => {
 
 </body>
 </html>
+
+
+
+
