@@ -1296,6 +1296,42 @@ footer {
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .form-shell { padding: 2rem 1.5rem; }
   section { padding: 6rem 0; }
+}.hero-card{
+  display:flex;
+  flex-direction:column;
+}
+
+.hero-card{
+  display:flex;
+  flex-direction:column;
+}
+
+.hero-image-card{
+  width:210%;
+  height:500px;
+  margin-top:1.5rem;
+  border-radius:18px;
+  overflow:hidden;
+
+  /* WHITE BORDER */
+  border:5px solid #ffffff;
+
+  /* PREMIUM SHADOW */
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.45),
+    0 0 25px rgba(255,255,255,0.08);
+}
+
+.hero-image-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.hero-right{
+  position:relative;
+  left:-20px;
 }
 </style>
 </head>
@@ -1384,24 +1420,12 @@ footer {
               <div class="stat-number">24H</div>
               <div class="stat-label">Support Response</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Client Satisfaction</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Years Experience</div>
-            </div>
+            <div class="hero-image-card">
+                   <img src="NexridgeTech-Workplace.png" alt="NexridgeTech Workspace">
+              </div>
+             </div>
           </div>
-          <div class="tech-stack">
-            <div class="tech-pill">React</div>
-            <div class="tech-pill">Node.js</div>
-            <div class="tech-pill">Cisco</div>
-            <div class="tech-pill">Mikrotik</div>
-            <div class="tech-pill">WordPress</div>
-            <div class="tech-pill">Linux</div>
-            <div class="tech-pill">AWS</div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -1520,8 +1544,8 @@ footer {
       <div class="plan-card reveal" style="transition-delay: 0s">
         <div class="plan-name">Digital Starter</div>
         <div class="plan-tagline">The essential foundation for establishing your professional online presence.</div>
-        <div class="plan-price"><sub>R</sub>1,500</div>
-        <div class="plan-cadence">Once-off payment</div>
+        <div class="plan-price" style="font-size:2.2rem;">  Get Quotation </div>  
+        <div class="plan-cadence"> Custom pricing based on your project </div>                                         
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span> 3-Page high-performance website</li>
@@ -1537,8 +1561,8 @@ footer {
         <div class="plan-badge">Recommended</div>
         <div class="plan-name">Business Suite</div>
         <div class="plan-tagline">Comprehensive digital infrastructure for expanding operations and serious online presence.</div>
-        <div class="plan-price"><sub>R</sub>3,500</div>
-        <div class="plan-cadence">Once-off payment</div>
+        <div class="plan-price" style="font-size:2.2rem;">  Get Quotation </div>
+        <div class="plan-cadence"> Custom pricing available </div>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Up to 6 custom internal pages</li>
@@ -1553,8 +1577,8 @@ footer {
       <div class="plan-card reveal" style="transition-delay: 0.2s">
         <div class="plan-name">Custom Systems</div>
         <div class="plan-tagline">Bespoke web applications, booking portals, and custom IT networking solutions.</div>
-        <div class="plan-price"><sub>R</sub>8,500<span style="font-size:1.5rem; color: var(--muted)">+</span></div>
-        <div class="plan-cadence">Per project</div>
+        <div class="plan-price" style="font-size:2.2rem;"> Get Quotation</div>
+        <div class="plan-cadence">Custom pricing based on project requirements</div>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Tailored booking & invoicing tools</li>
@@ -1912,7 +1936,6 @@ reveals.forEach(el => revealObserver.observe(el));
 
 /* ══ FORM SUBMIT ══ */
 
-/* ══ FORM SUBMIT ══ */
 
 const contactForm = document.getElementById('contactForm');
 
@@ -1951,11 +1974,23 @@ contactForm.addEventListener('submit', async (e) => {
 }
       ])
       .select();
-
+	  
+	
     if (error) {
       console.error('SUPABASE ERROR:', error);
       throw error;
     }
+	
+	emailjs.init("BsJwMfCaMy9no9mdf");
+	
+await emailjs.send("service_3h22hig", "template_y41wk7a", {
+  from_name: `${firstName} ${lastName}`,
+  email: email,
+  message: message,
+  service: service
+});
+
+
 
     console.log('Saved:', data);
 
@@ -2001,9 +2036,29 @@ window.addEventListener('scroll', () => {
   if (bgText) bgText.style.transform = `translate(-50%, calc(-50% + ${y * 0.3}px))`;
 }, { passive: true });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("BsJwMfCaMy9no9mdf");
+
+  function sendMessage() {
+
+    emailjs.send("service_3h22hig", "template_y41wk7a", {
+      from_name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    })
+    .then(function(response) {
+      alert("Message sent successfully!");
+      console.log("SUCCESS!", response.status, response.text);
+    })
+    .catch(function(error) {
+      alert("Failed to send message!");
+      console.log("FAILED...", error);
+    });
+
+  }
+</script>
+
 </body>
 </html>
-
-
-
-
