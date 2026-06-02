@@ -1308,15 +1308,15 @@ footer {
 
 .hero-image-card{
   width:100%;
-  height:500px;
+  max-width:100%;
+  height:auto;
+  min-height:250px;
   margin-top:1.5rem;
   border-radius:18px;
   overflow:hidden;
 
-  /* WHITE BORDER */
   border:5px solid #ffffff;
 
-  /* PREMIUM SHADOW */
   box-shadow:
     0 20px 50px rgba(0,0,0,0.45),
     0 0 25px rgba(255,255,255,0.08);
@@ -1324,15 +1324,37 @@ footer {
 
 .hero-image-card img{
   width:100%;
-  height:100%;
-  object-fit:cover;
+  height:auto;
   display:block;
+  object-fit:cover;
 }
 
 .hero-right{
   position:relative;
   left:-20px;
 }
+
+@media (max-width: 768px){
+
+  .hero-right{
+    left:0;
+    width:100%;
+  }
+
+  .hero-image-card{
+    height:auto;
+    min-height:220px;
+    border-width:3px;
+  }
+
+  .hero-image-card img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+
+}
+
 </style>
 </head>
 <body>
