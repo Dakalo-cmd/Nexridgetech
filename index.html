@@ -1178,6 +1178,79 @@ footer {
   font-weight:300 !important;
 }
 
+/* FAQ */
+#faq{
+  padding:120px 0;
+}
+
+.faq-header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.faq-header h2{
+  font-size:clamp(2.5rem,5vw,5rem);
+  font-weight:800;
+  line-height:1;
+  margin-bottom:20px;
+}
+
+.faq-header p{
+  color:var(--muted);
+  font-size:1.1rem;
+}
+
+.faq-layout{
+  max-width:850px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.faq-item{
+  background:rgba(9,18,38,.75);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  overflow:hidden;
+  transition:.3s;
+}
+
+.faq-item:hover{
+  border-color:rgba(0,229,176,.25);
+}
+
+.faq-q{
+  cursor:pointer;
+  list-style:none;
+  padding:28px;
+  font-size:1.15rem;
+  font-weight:600;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.faq-q::-webkit-details-marker{
+  display:none;
+}
+
+.faq-q::after{
+  content:"+";
+  font-size:1.5rem;
+  color:var(--lime);
+}
+
+.faq-item[open] .faq-q::after{
+  content:"−";
+}
+
+.faq-a{
+  padding:0 28px 28px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
 </style>
 </head>
 <body>
@@ -1209,6 +1282,7 @@ footer {
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">About</a></li>
+		<li><a href="#faq">FAQ</a></li>
         <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -1386,7 +1460,48 @@ footer {
     </div>
   </div>
 </section>
+<section id="about-company">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Our Approach</div>
+      <h2 class="section-title">Built different,<br>because the basics matter.</h2>
+      <p class="section-sub">
+        Three things South African businesses actually need from an IT company —
+        and how we deliver them.
+      </p>
+    </div>
 
+    <div class="purpose-grid">
+      <div class="purpose-card reveal">
+        <h3>Custom-Built, Not Templated</h3>
+        <p>
+          We write clean, performant code from the ground up — no drag-and-drop
+          page builders, no bloated premium themes, no licensing dependencies.
+          You get a website or system that loads fast, ranks well, and is fully
+          yours to own and control.
+        </p>
+      </div>
+
+      <div class="purpose-card reveal">
+        <h3>You Talk to the Builder</h3>
+        <p>
+          There is no account manager sitting between you and the person actually
+          solving your problem. When something needs doing or something breaks,
+          you reach us directly by WhatsApp, phone, or email.
+        </p>
+      </div>
+
+      <div class="purpose-card reveal">
+        <h3>Fixed Price. Defined Scope.</h3>
+        <p>
+          Every project is quoted as a transparent, fixed-price deliverable
+          before work begins. You know exactly what you're getting, what it
+          costs, and what happens if timelines change.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- PRICING -->
 <section id="pricing">
   <div class="container">
@@ -1446,6 +1561,96 @@ footer {
   </div>
 </section>
 
+<section id="faq">
+  <div class="container">
+
+    <div class="pricing-header">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">
+        Straight answers to the questions businesses ask most.
+      </p>
+    </div>
+
+    <div class="faq-layout">
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          How long will it take to complete my project?
+        </summary>
+        <p class="faq-a">
+          Standard business websites typically take 5–14 days.
+          More advanced systems and networking projects are scoped
+          with clear timelines before work begins.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Do you handle hosting, domains and maintenance?
+        </summary>
+        <p class="faq-a">
+          Yes. We manage hosting, domains, SSL certificates,
+          security and ongoing maintenance so you can focus on
+          your business.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Can you upgrade my existing website?
+        </summary>
+        <p class="faq-a">
+          Absolutely. We first assess your current website and
+          determine whether an upgrade or a complete rebuild
+          will provide the best value.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          What do you need from me to get started?
+        </summary>
+        <p class="faq-a">
+          Usually your business information, logo, preferred
+          colours and a brief discussion about your goals.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Are there any hidden fees?
+        </summary>
+        <p class="faq-a">
+          No. All project costs are discussed and agreed upon
+          before work begins.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          What support do you provide after launch?
+        </summary>
+        <p class="faq-a">
+          Every project includes post-launch support, and we also
+          offer ongoing maintenance and IT support packages.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          Who works on my project?
+        </summary>
+        <p class="faq-a">
+          You work directly with the developer and technical team
+          building your solution.
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
