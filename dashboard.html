@@ -691,25 +691,163 @@ table.qtable tbody tr:hover .row-acts{opacity:1}
   @page{size:A4;margin:12mm 10mm}
 }
 
-/* RESPONSIVE */
-@media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:900px){
-  .nav-rail{display:none}
-  .dash-grid{grid-template-columns:1fr}
-  .esb{position:fixed;left:0;top:var(--top-h);bottom:0;z-index:var(--z-sb);
-    transform:translateX(0);transition:transform .3s ease;width:var(--sb-w)!important}
-  .esb.collapsed{transform:translateX(-100%)}
-  .parties{grid-template-columns:1fr}
-  .party:first-child{border-right:none;border-bottom:1px solid var(--d-line)}
-  .party{padding:1.1rem 1.5rem}
-  .doc-body{padding:0 1.5rem}
-  .dh{padding:1.625rem 1.5rem;flex-direction:column;gap:.75rem}
-  .ie-grid,.sig-grid{grid-template-columns:1fr}
-  .toast-container{right:.75rem;bottom:.75rem;left:.75rem}
-  .toast{max-width:100%}
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+/* ---------- Large Tablets ---------- */
+@media (max-width:1100px){
+.kpi-grid{
+    grid-template-columns:repeat(2,1fr);
 }
-@media(max-width:600px){.kpi-grid{grid-template-columns:1fr 1fr}.fg-row{grid-template-columns:1fr}
-  .pay-schedule{flex-direction:column}.pay-card{min-width:100%}.tb-search{display:none}}
+
+.dash-grid{
+    grid-template-columns:1fr;
+}
+}
+/* ---------- Tablets ---------- */
+@media (max-width:900px){
+/* Top Bar */
+.topbar{
+    height:60px;
+    padding:0 12px;
+}
+.tb-name,
+.tb-divider,
+.tb-search,
+.uc-role{
+    display:none;
+}
+.tb-brand{
+    min-width:auto;
+}
+.user-chip{
+    background:none;
+    border:none;
+    padding:4px;
+}
+/* Dashboard */
+.dash-grid{
+    grid-template-columns:1fr;
+}
+.dash-hd{
+    flex-direction:column;
+    align-items:flex-start;
+}
+/* Sidebar */
+.esb{
+position:fixed;
+top:60px;
+left:0;
+bottom:0;
+width:320px !important;
+z-index:1000;
+transition:.3s;
+}
+.esb.collapsed{
+transform:translateX(-100%);
+}
+/* Quote Document */
+.parties,
+.ie-grid,
+.sig-grid,
+.bank-grid,
+.terms-grid,
+.fg-row{
+grid-template-columns:1fr;
+}
+.party:first-child{
+border-right:none;
+border-bottom:1px solid var(--d-line);
+}
+.party{
+padding:1rem;
+}
+.doc-body{
+padding:0 1rem;
+}
+.dh{
+padding:1.5rem 1rem;
+flex-direction:column;
+gap:1rem;
+}
+.toast-container{
+left:12px;
+right:12px;
+bottom:12px;
+}
+.toast{
+max-width:100%;
+}
+}
+/* ---------- Phones ---------- */
+@media (max-width:768px){
+/* Bottom Navigation */
+.nav-rail{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+width:100%;
+height:65px;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+align-items:center;
+background:var(--bg-1);
+border-top:1px solid var(--bd);
+z-index:9999;
+}
+.nav-item{
+width:auto;
+height:auto;
+padding:8px;
+}
+.nav-item.active::before{
+display:none;
+}
+.nav-tip{
+display:none;
+}
+/* Main Layout */
+.main{
+padding-bottom:75px;
+}
+/* KPI Cards */
+.kpi-grid{
+grid-template-columns:1fr;
+gap:12px;
+}
+/* Tables */
+.qscroll{
+overflow-x:auto;
+}
+table.qtable{
+min-width:700px;
+}
+/* Quote */
+.quote-doc{
+width:100%;
+border-radius:0;
+}
+}
+/* ---------- Small Phones ---------- */
+@media (max-width:600px){
+.pay-schedule{
+flex-direction:column;
+}
+.pay-card{
+min-width:100%;
+}
+.btn{
+width:100%;
+}
+.btn-icon{
+width:auto;
+}
+.login-card{
+padding:2rem 1.5rem;
+}
+}
 </style>
 </head>
 <body>
