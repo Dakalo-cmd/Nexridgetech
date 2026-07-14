@@ -1489,8 +1489,7 @@ contactForm.addEventListener('submit', async (e) => {
 
     const { data, error } = await supabaseClient
       .from('messages')
-      .insert([{ first_name: firstName, last_name: lastName, email, service, message }])
-      .select();
+      .insert([{ first_name: firstName, last_name: lastName, email, service, message }]);
 
     if (error) throw error;
 
