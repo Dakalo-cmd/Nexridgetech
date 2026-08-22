@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SV9YK2NCKZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SV9YK2NCKZ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terms of Service for NexridgeTech IT Solutions — the terms governing use of our website and our web development, IT support, and networking services." />
+  <meta name="robots" content="index, follow" />
+  <title>Terms of Service | NexridgeTech IT Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+
+  <meta name="theme-color" content="#00F0B5">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #030712;
+      --bg-2: #080f25;
+      --bg-3: #0d1532;
+      --surface: rgba(255, 255, 255, 0.02);
+      --surface-2: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.06);
+      --border-bright: rgba(255, 255, 255, 0.12);
+      --lime: #00f0b5;
+      --lime-2: #05ffd0;
+      --lime-dim: rgba(0, 240, 181, 0.08);
+      --ice: #f8fafc;
+      --muted: #9ca3af;
+      --muted-2: #4b5563;
+      --text: #e5e7eb;
+      --font-display: 'Manrope', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.25, 1, 0.5, 1);
+      --radius: 24px;
+      --radius-sm: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; background-color: var(--bg); }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+      color: var(--ice);
+      letter-spacing: -0.01em;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ═══ HEADER (matches main site) ═══ */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 500;
+      padding: 1.5rem 0;
+      transition: all 0.4s var(--ease-out);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      padding: 0 1.5rem;
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-bright);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    .logo {
+      display: flex; align-items: center; gap: 0.75rem;
+      text-decoration: none; font-family: var(--font-display);
+      font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--ice);
+    }
+    .logo-mark {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--lime), #00a8ff);
+      border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; position: relative;
+    }
+    .logo-mark svg { width: 20px; height: 20px; color: var(--bg); stroke-width: 2.5; }
+    .logo em {
+      font-style: normal; font-weight: 800;
+      background: linear-gradient(135deg, var(--lime), #00b3f0);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .back-home {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text); text-decoration: none; font-size: 0.95rem; font-weight: 500;
+      padding: 0.6rem 1.25rem; border-radius: 10px; border: 1px solid var(--border-bright);
+      transition: all 0.2s ease;
+    }
+    .back-home:hover { color: var(--lime); border-color: var(--lime); background: rgba(0,240,181,0.05); }
+    .back-home svg { width: 16px; height: 16px; }
+
+    /* ═══ LEGAL HERO ═══ */
+    .legal-hero {
+      padding: 12rem 0 4rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(0,240,181,0.04), transparent 60%);
+    }
+    .eyebrow {
+      font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--lime); display: flex;
+      align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; font-weight: 500;
+    }
+    .eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--lime); }
+    .legal-hero h1 {
+      font-size: clamp(2.4rem, 6vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.25rem;
+    }
+    .legal-meta {
+      font-family: var(--font-mono); font-size: 0.9rem; color: var(--muted);
+    }
+    .legal-intro {
+      margin-top: 1.75rem; color: var(--muted); font-size: 1.1rem; max-width: 700px; line-height: 1.7;
+    }
+
+    /* ═══ LEGAL BODY ═══ */
+    .legal-body { padding: 5rem 0 8rem; }
+    .legal-layout {
+      display: grid; grid-template-columns: 260px 1fr; gap: 4rem; align-items: start;
+    }
+    .legal-toc {
+      position: sticky; top: 7.5rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem;
+    }
+    .legal-toc h4 {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted); margin-bottom: 1rem; font-weight: 700;
+    }
+    .legal-toc ul { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+    .legal-toc a {
+      text-decoration: none; color: var(--muted); font-size: 0.9rem;
+      transition: color 0.2s ease; display: block; line-height: 1.4;
+    }
+    .legal-toc a:hover { color: var(--lime); }
+
+    .legal-content { max-width: 760px; }
+    .legal-content h2 {
+      font-size: 1.5rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1rem;
+      padding-top: 1.5rem; border-top: 1px solid var(--border); scroll-margin-top: 7rem;
+    }
+    .legal-content > h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .legal-content h3 { font-size: 1.1rem; font-weight: 700; margin-top: 1.75rem; margin-bottom: 0.75rem; color: var(--ice); }
+    .legal-content p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 1.1rem; }
+    .legal-content ul, .legal-content ol {
+      color: var(--muted); font-size: 1rem; line-height: 1.75;
+      margin: 0 0 1.1rem 0; padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .legal-content li::marker { color: var(--lime); }
+    .legal-content strong { color: var(--ice); font-weight: 600; }
+    .legal-content a.inline-link { color: var(--lime); text-decoration: underline; text-underline-offset: 3px; }
+
+    .callout {
+      background: var(--lime-dim); border: 1px solid rgba(0,240,181,0.2);
+      border-radius: var(--radius-sm); padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;
+    }
+    .callout p { color: var(--text); margin-bottom: 0; }
+    .callout p:not(:last-child) { margin-bottom: 0.75rem; }
+
+    .contact-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem; margin-top: 1rem;
+    }
+    .contact-box p { margin-bottom: 0.4rem; }
+    .contact-box p:last-child { margin-bottom: 0; }
+
+    table.legal-table {
+      width: 100%; border-collapse: collapse; margin-bottom: 1.5rem;
+      font-size: 0.92rem; color: var(--muted);
+    }
+    table.legal-table th, table.legal-table td {
+      text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    table.legal-table th { color: var(--ice); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+
+    /* ═══ FOOTER (matches main site) ═══ */
+    footer { background: var(--bg-3); border-top: 1px solid var(--border); padding: 5rem 0 3rem; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border); }
+    .footer-brand { max-width: 340px; }
+    .footer-brand .logo { margin-bottom: 1.25rem; }
+    .footer-brand p { font-size: 0.95rem; color: var(--muted); line-height: 1.6; }
+    .footer-hours { margin-top: 2rem; }
+    .footer-hours h4 { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ice); margin-bottom: 0.5rem; }
+    .footer-hours p { font-size: 0.9rem; color: var(--muted); font-family: var(--font-mono); }
+    .footer-links h5 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; color: var(--ice); margin-bottom: 1.5rem; }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; }
+    .footer-links a { font-size: 0.95rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--lime); }
+    .footer-bottom { padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--muted); }
+    .footer-bottom a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-bottom a:hover { color: var(--lime); }
+
+    /* ═══ FLOATING WHATSAPP ═══ */
+    .floating-whatsapp {
+      position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
+      background-color: #25d366; color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 35px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); z-index: 9999;
+      transition: all 0.3s var(--ease-spring); text-decoration: none;
+    }
+    .floating-whatsapp:hover { transform: translateY(-5px) scale(1.05); background-color: #1ebe57; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 900px) {
+      .legal-layout { grid-template-columns: 1fr; }
+      .legal-toc { position: relative; top: 0; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 1rem; }
+      .legal-hero { padding: 9rem 0 3rem; }
+      .legal-body { padding: 3rem 0 5rem; }
+      .nav-inner { height: 64px; padding: 0 1rem; }
+      .back-home span { display: none; }
+      .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+      .footer-bottom { display: block; }
+      .floating-whatsapp { bottom: 20px; right: 20px; width: 50px; height: 50px; font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        </div>
+        Nexridge<em>Tech</em>
+      </a>
+      <a href="index.html" class="back-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="legal-hero">
+  <div class="container">
+    <div class="eyebrow">Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="legal-meta">Effective Date: 14 August 2026 &nbsp;·&nbsp; Last Updated: 14 August 2026</p>
+    <p class="legal-intro">These are the terms that apply when you use our website or engage us for a project. We've tried to write them in plain language — they cover how quotes, payment, ownership, and timelines work, so both sides know where they stand.</p>
+  </div>
+</section>
+
+<section class="legal-body">
+  <div class="container legal-layout">
+    <aside class="legal-toc">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#introduction">1. Introduction &amp; Acceptance</a></li>
+        <li><a href="#definitions">2. Definitions</a></li>
+        <li><a href="#services-provided">3. Description of Services</a></li>
+        <li><a href="#quotes">4. Quotes &amp; Proposals</a></li>
+        <li><a href="#client-responsibilities">5. Client Responsibilities</a></li>
+        <li><a href="#payment">6. Payment Terms</a></li>
+        <li><a href="#timelines">7. Project Timelines</a></li>
+        <li><a href="#intellectual-property">8. Intellectual Property</a></li>
+        <li><a href="#third-party">9. Third-Party Services</a></li>
+        <li><a href="#warranties">10. Warranties &amp; Disclaimers</a></li>
+        <li><a href="#liability">11. Limitation of Liability</a></li>
+        <li><a href="#confidentiality">12. Confidentiality</a></li>
+        <li><a href="#termination">13. Termination</a></li>
+        <li><a href="#force-majeure">14. Force Majeure</a></li>
+        <li><a href="#governing-law">15. Governing Law &amp; Dispute Resolution</a></li>
+        <li><a href="#changes">16. Changes to These Terms</a></li>
+        <li><a href="#contact">17. Contact Us</a></li>
+      </ul>
+    </aside>
+    <article class="legal-content">
+      <h2 id="introduction">1. Introduction &amp; Acceptance</h2>
+
+      <p>These Terms of Service ("<strong>Terms</strong>") govern your access to and use of the website at <a class="inline-link" href="https://nexridgetech.co.za">nexridgetech.co.za</a> (the "<strong>Website</strong>"), and the web development, IT support, and networking services (the "<strong>Services</strong>") provided by NexridgeTech IT Solutions ("<strong>NexridgeTech</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>").</p>
+      <p>By accessing our Website, submitting an enquiry, or engaging us to provide Services, you ("<strong>Client</strong>", "<strong>you</strong>") agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use our Website or engage our Services.</p>
+      <p>Where we agree to carry out a specific project for you, these Terms apply together with the scope, deliverables, pricing, and timelines set out in the relevant quote, proposal, or written agreement for that project ("<strong>Project Agreement</strong>"). If there is a conflict between these Terms and a signed Project Agreement, the Project Agreement takes precedence for that project.</p>
+
+      <h2 id="definitions">2. Definitions</h2>
+
+      <ul>
+        <li><strong>"Services"</strong> means web development, hosting coordination, IT support, network infrastructure, and any related digital or technical services offered by NexridgeTech.</li>
+        <li><strong>"Deliverables"</strong> means the websites, systems, configurations, documentation, or other outputs produced by NexridgeTech for the Client under a Project Agreement.</li>
+        <li><strong>"Client Materials"</strong> means any content, logos, text, images, credentials, or other materials provided by the Client for use in a project.</li>
+        <li><strong>"Third-Party Services"</strong> means hosting providers, domain registrars, software licences, plugins, APIs, or other services not owned by NexridgeTech that a project may depend on.</li>
+      </ul>
+
+      <h2 id="services-provided">3. Description of Services</h2>
+
+      <p>NexridgeTech provides premium web development, managed IT infrastructure, and enterprise networking services to businesses. The specific scope of work, features, and deliverables for any engagement will be set out in a written quote or proposal provided to the Client before work begins.</p>
+      <p>We reserve the right to refuse or discontinue service to any person or business, at our discretion, including where a project falls outside our capability, involves unlawful content or purposes, or where payment obligations are not met.</p>
+
+      <h2 id="quotes">4. Quotes &amp; Proposals</h2>
+
+      <ul>
+        <li>All quotes and proposals provided by NexridgeTech are estimates based on the information available to us at the time, and are valid for <strong>30 days</strong> from the date issued unless otherwise stated.</li>
+        <li>Final scope, pricing, and timelines are confirmed once both parties agree in writing (including via email) to a Project Agreement.</li>
+        <li>Any request for additional features, revisions, or work outside the agreed scope may be treated as a change request and may incur additional fees and adjusted timelines, to be agreed with the Client before proceeding.</li>
+      </ul>
+
+      <h2 id="client-responsibilities">5. Client Responsibilities</h2>
+
+      <p>To enable us to deliver your project effectively, you agree to:</p>
+      <ul>
+        <li>Provide accurate, complete, and timely information relevant to your project</li>
+        <li>Supply any Client Materials (text, images, logos, credentials, etc.) required, and confirm that you have the right to use and provide such materials to us</li>
+        <li>Respond to requests for feedback, approvals, or information within a reasonable time, as delays on your part may affect project timelines</li>
+        <li>Keep any account credentials, admin access, or login details we provide to you secure and confidential</li>
+      </ul>
+
+      <h2 id="payment">6. Payment Terms</h2>
+
+      <ul>
+        <li>Pricing for each project is agreed in advance and set out in the relevant quote or Project Agreement. Standard packages are available on request; custom projects are priced based on scope.</li>
+        <li>Unless otherwise agreed in writing, projects are billed via an upfront deposit, with the balance due on completion or according to agreed milestones.</li>
+        <li>Recurring IT support, hosting coordination, or maintenance services (where applicable) are billed in accordance with the payment schedule set out in the relevant agreement.</li>
+        <li>Late payments may result in suspension of work, suspension of hosting or support services, or withholding of final Deliverables until outstanding amounts are settled.</li>
+        <li>All fees are quoted in South African Rand (ZAR) unless otherwise stated, and are exclusive of any applicable taxes unless expressly indicated.</li>
+      </ul>
+
+      <h2 id="timelines">7. Project Timelines</h2>
+
+      <p>We provide estimated timelines in good faith based on the agreed scope of work. Actual delivery may be affected by factors outside our control, including delays in receiving Client Materials, feedback, or approvals, third-party service outages, or scope changes. We will communicate with you promptly if we anticipate a delay, but we are not liable for delays caused by factors outside our reasonable control, including delays attributable to the Client.</p>
+
+      <h2 id="intellectual-property">8. Intellectual Property</h2>
+
+      <ul>
+        <li>Upon full and final payment for a project, ownership of the final, agreed Deliverables created specifically for the Client (such as custom website code and design produced for that project) transfers to the Client, except where otherwise agreed in writing.</li>
+        <li>NexridgeTech retains ownership of any pre-existing tools, frameworks, code libraries, templates, or methodologies used in delivering the Services, and grants the Client a licence to use these solely as part of the Deliverables.</li>
+        <li>Client Materials remain the property of the Client. By providing Client Materials, you grant NexridgeTech a licence to use them solely for the purpose of delivering the agreed Services.</li>
+        <li>Unless you request otherwise in writing, NexridgeTech may reference completed projects (including screenshots and a general description of work performed) in our portfolio, case studies, and marketing materials.</li>
+      </ul>
+
+      <h2 id="third-party">9. Third-Party Services</h2>
+
+      <p>Many projects rely on Third-Party Services such as hosting providers, domain registrars, content management systems, plugins, or APIs. Where we recommend, configure, or coordinate such services on your behalf:</p>
+      <ul>
+        <li>Ongoing subscription or licence costs for Third-Party Services are the Client's responsibility, unless expressly included in a Project Agreement</li>
+        <li>NexridgeTech is not responsible for outages, price changes, policy changes, or service discontinuation by third-party providers</li>
+        <li>Use of Third-Party Services is subject to the terms and privacy policies of those respective providers</li>
+      </ul>
+
+      <h2 id="warranties">10. Warranties &amp; Disclaimers</h2>
+
+      <p>We are committed to delivering high-quality, professional work. However, Services and Deliverables are provided on an "as is" and "as available" basis, and, to the maximum extent permitted by law, we do not guarantee:</p>
+      <ul>
+        <li>That a website or system will be entirely free of errors or uninterrupted at all times</li>
+        <li>Specific business outcomes, such as search engine rankings, traffic volumes, conversion rates, or sales figures</li>
+        <li>Compatibility with every possible third-party plugin, browser, or device configuration released after project completion</li>
+      </ul>
+      <p>We warrant that Services will be performed with reasonable skill and care, consistent with generally accepted industry standards.</p>
+
+      <h2 id="liability">11. Limitation of Liability</h2>
+
+      <p>To the maximum extent permitted by South African law:</p>
+      <ul>
+        <li>NexridgeTech's total liability arising out of or in connection with a project shall not exceed the total fees paid by the Client for that specific project in the twelve (12) months preceding the claim.</li>
+        <li>NexridgeTech shall not be liable for any indirect, incidental, consequential, or special damages, including loss of profits, revenue, data, or business opportunity, arising out of the use of, or inability to use, our Services or Deliverables.</li>
+        <li>Nothing in these Terms limits or excludes liability that cannot lawfully be limited or excluded under South African law, including liability for gross negligence or intentional misconduct.</li>
+      </ul>
+
+      <h2 id="confidentiality">12. Confidentiality</h2>
+
+      <p>Both parties agree to keep confidential any non-public business, technical, or financial information disclosed by the other party in connection with a project, and to use such information only for the purposes of that project, except where disclosure is required by law.</p>
+
+      <h2 id="termination">13. Termination</h2>
+
+      <ul>
+        <li>Either party may terminate a project engagement by providing written notice to the other party.</li>
+        <li>If the Client terminates a project after work has commenced, the Client remains liable for payment of fees for work already completed, plus any non-recoverable costs already incurred on the Client's behalf (such as third-party licences purchased for the project).</li>
+        <li>NexridgeTech may suspend or terminate Services immediately if the Client fails to make payment when due, or engages in unlawful or abusive conduct towards our team.</li>
+      </ul>
+
+      <h2 id="force-majeure">14. Force Majeure</h2>
+
+      <p>Neither party shall be liable for any failure or delay in performance caused by circumstances beyond its reasonable control, including natural disasters, power or internet outages, acts of government, labour disputes, or other events of force majeure.</p>
+
+      <h2 id="governing-law">15. Governing Law &amp; Dispute Resolution</h2>
+
+      <p>These Terms are governed by the laws of the Republic of South Africa. The parties agree to first attempt to resolve any dispute arising out of or relating to these Terms or a project through good-faith negotiation. If a dispute cannot be resolved informally within a reasonable time, the parties consent to the jurisdiction of the South African courts.</p>
+
+      <h2 id="changes">16. Changes to These Terms</h2>
+
+      <p>We may update these Terms from time to time to reflect changes in our business practices or legal requirements. Any changes will be posted on this page with an updated "Last Updated" date. Continued use of our Website or Services after changes are posted constitutes acceptance of the updated Terms. Material changes affecting an active Project Agreement will be communicated to the Client directly.</p>
+
+      <h2 id="contact">17. Contact Us</h2>
+
+      <p>If you have any questions about these Terms of Service, please contact us:</p>
+      <div class="contact-box">
+        <p><strong>NexridgeTech IT Solutions</strong></p>
+        <p>Email: info@nexridgetech.co.za</p>
+        <p>Telephone: +27 60 743 3055</p>
+        <p>Location: Mpumalanga, South Africa</p>
+      </div>
+
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          Nexridge<em>Tech</em>
+        </a>
+        <p>Premium web development, networking, digital systems and IT support for businesses across South Africa.</p>
+        <div class="footer-hours">
+          <h4>Operating Hours</h4>
+          <p>Monday-Friday: 08h00 - 17h00</p>
+          <p>Saturday: 08h00 - 13h00</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="index.html#services">Web Development</a></li>
+          <li><a href="index.html#services">IT Infrastructure</a></li>
+          <li><a href="index.html#services">Network Systems</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html#approach-section">Our Approach</a></li>
+          <li><a href="index.html#reviews">Client Success</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+27607433055">+27 60 743 3055</a></li>
+          <li><a href="mailto:info@nexridgetech.co.za">info@nexridgetech.co.za</a></li>
+          <li><a href="index.html#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 NexridgeTech IT Solutions. All rights reserved.</p>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27607433055" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>

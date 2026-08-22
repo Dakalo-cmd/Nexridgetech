@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SV9YK2NCKZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SV9YK2NCKZ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for NexridgeTech IT Solutions — how we collect, use, and protect your personal information in accordance with South Africa's POPIA." />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy | NexridgeTech IT Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+
+  <meta name="theme-color" content="#00F0B5">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #030712;
+      --bg-2: #080f25;
+      --bg-3: #0d1532;
+      --surface: rgba(255, 255, 255, 0.02);
+      --surface-2: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.06);
+      --border-bright: rgba(255, 255, 255, 0.12);
+      --lime: #00f0b5;
+      --lime-2: #05ffd0;
+      --lime-dim: rgba(0, 240, 181, 0.08);
+      --ice: #f8fafc;
+      --muted: #9ca3af;
+      --muted-2: #4b5563;
+      --text: #e5e7eb;
+      --font-display: 'Manrope', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.25, 1, 0.5, 1);
+      --radius: 24px;
+      --radius-sm: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; background-color: var(--bg); }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+      color: var(--ice);
+      letter-spacing: -0.01em;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ═══ HEADER (matches main site) ═══ */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 500;
+      padding: 1.5rem 0;
+      transition: all 0.4s var(--ease-out);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      padding: 0 1.5rem;
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-bright);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    .logo {
+      display: flex; align-items: center; gap: 0.75rem;
+      text-decoration: none; font-family: var(--font-display);
+      font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--ice);
+    }
+    .logo-mark {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--lime), #00a8ff);
+      border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; position: relative;
+    }
+    .logo-mark svg { width: 20px; height: 20px; color: var(--bg); stroke-width: 2.5; }
+    .logo em {
+      font-style: normal; font-weight: 800;
+      background: linear-gradient(135deg, var(--lime), #00b3f0);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .back-home {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text); text-decoration: none; font-size: 0.95rem; font-weight: 500;
+      padding: 0.6rem 1.25rem; border-radius: 10px; border: 1px solid var(--border-bright);
+      transition: all 0.2s ease;
+    }
+    .back-home:hover { color: var(--lime); border-color: var(--lime); background: rgba(0,240,181,0.05); }
+    .back-home svg { width: 16px; height: 16px; }
+
+    /* ═══ LEGAL HERO ═══ */
+    .legal-hero {
+      padding: 12rem 0 4rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(0,240,181,0.04), transparent 60%);
+    }
+    .eyebrow {
+      font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--lime); display: flex;
+      align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; font-weight: 500;
+    }
+    .eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--lime); }
+    .legal-hero h1 {
+      font-size: clamp(2.4rem, 6vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.25rem;
+    }
+    .legal-meta {
+      font-family: var(--font-mono); font-size: 0.9rem; color: var(--muted);
+    }
+    .legal-intro {
+      margin-top: 1.75rem; color: var(--muted); font-size: 1.1rem; max-width: 700px; line-height: 1.7;
+    }
+
+    /* ═══ LEGAL BODY ═══ */
+    .legal-body { padding: 5rem 0 8rem; }
+    .legal-layout {
+      display: grid; grid-template-columns: 260px 1fr; gap: 4rem; align-items: start;
+    }
+    .legal-toc {
+      position: sticky; top: 7.5rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem;
+    }
+    .legal-toc h4 {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted); margin-bottom: 1rem; font-weight: 700;
+    }
+    .legal-toc ul { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+    .legal-toc a {
+      text-decoration: none; color: var(--muted); font-size: 0.9rem;
+      transition: color 0.2s ease; display: block; line-height: 1.4;
+    }
+    .legal-toc a:hover { color: var(--lime); }
+
+    .legal-content { max-width: 760px; }
+    .legal-content h2 {
+      font-size: 1.5rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1rem;
+      padding-top: 1.5rem; border-top: 1px solid var(--border); scroll-margin-top: 7rem;
+    }
+    .legal-content > h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+    .legal-content h3 { font-size: 1.1rem; font-weight: 700; margin-top: 1.75rem; margin-bottom: 0.75rem; color: var(--ice); }
+    .legal-content p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 1.1rem; }
+    .legal-content ul, .legal-content ol {
+      color: var(--muted); font-size: 1rem; line-height: 1.75;
+      margin: 0 0 1.1rem 0; padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .legal-content li::marker { color: var(--lime); }
+    .legal-content strong { color: var(--ice); font-weight: 600; }
+    .legal-content a.inline-link { color: var(--lime); text-decoration: underline; text-underline-offset: 3px; }
+
+    .callout {
+      background: var(--lime-dim); border: 1px solid rgba(0,240,181,0.2);
+      border-radius: var(--radius-sm); padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;
+    }
+    .callout p { color: var(--text); margin-bottom: 0; }
+    .callout p:not(:last-child) { margin-bottom: 0.75rem; }
+
+    .contact-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem; margin-top: 1rem;
+    }
+    .contact-box p { margin-bottom: 0.4rem; }
+    .contact-box p:last-child { margin-bottom: 0; }
+
+    table.legal-table {
+      width: 100%; border-collapse: collapse; margin-bottom: 1.5rem;
+      font-size: 0.92rem; color: var(--muted);
+    }
+    table.legal-table th, table.legal-table td {
+      text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top;
+    }
+    table.legal-table th { color: var(--ice); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+
+    /* ═══ FOOTER (matches main site) ═══ */
+    footer { background: var(--bg-3); border-top: 1px solid var(--border); padding: 5rem 0 3rem; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border); }
+    .footer-brand { max-width: 340px; }
+    .footer-brand .logo { margin-bottom: 1.25rem; }
+    .footer-brand p { font-size: 0.95rem; color: var(--muted); line-height: 1.6; }
+    .footer-hours { margin-top: 2rem; }
+    .footer-hours h4 { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ice); margin-bottom: 0.5rem; }
+    .footer-hours p { font-size: 0.9rem; color: var(--muted); font-family: var(--font-mono); }
+    .footer-links h5 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; color: var(--ice); margin-bottom: 1.5rem; }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; }
+    .footer-links a { font-size: 0.95rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--lime); }
+    .footer-bottom { padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--muted); }
+    .footer-bottom a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-bottom a:hover { color: var(--lime); }
+
+    /* ═══ FLOATING WHATSAPP ═══ */
+    .floating-whatsapp {
+      position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
+      background-color: #25d366; color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 35px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); z-index: 9999;
+      transition: all 0.3s var(--ease-spring); text-decoration: none;
+    }
+    .floating-whatsapp:hover { transform: translateY(-5px) scale(1.05); background-color: #1ebe57; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 900px) {
+      .legal-layout { grid-template-columns: 1fr; }
+      .legal-toc { position: relative; top: 0; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 1rem; }
+      .legal-hero { padding: 9rem 0 3rem; }
+      .legal-body { padding: 3rem 0 5rem; }
+      .nav-inner { height: 64px; padding: 0 1rem; }
+      .back-home span { display: none; }
+      .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+      .footer-bottom { display: block; }
+      .floating-whatsapp { bottom: 20px; right: 20px; width: 50px; height: 50px; font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        </div>
+        Nexridge<em>Tech</em>
+      </a>
+      <a href="index.html" class="back-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="legal-hero">
+  <div class="container">
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="legal-meta">Effective Date: 14 August 2026 &nbsp;·&nbsp; Last Updated: 14 August 2026</p>
+    <p class="legal-intro">We know you're trusting us with your information when you reach out about a project. This page explains, in plain terms, what we collect, why we collect it, and the rights you have over it under South African law.</p>
+  </div>
+</section>
+
+<section class="legal-body">
+  <div class="container legal-layout">
+    <aside class="legal-toc">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#introduction">1. Introduction</a></li>
+        <li><a href="#who-we-are">2. Who We Are (The Responsible Party)</a></li>
+        <li><a href="#information-we-collect">3. Information We Collect</a></li>
+        <li><a href="#how-we-use">4. How We Use Your Information</a></li>
+        <li><a href="#legal-basis">5. Our Legal Basis for Processing</a></li>
+        <li><a href="#cookies">6. Cookies and Tracking Technologies</a></li>
+        <li><a href="#sharing">7. Sharing Your Information With Third Parties</a></li>
+        <li><a href="#cross-border">8. Cross-Border Transfers</a></li>
+        <li><a href="#retention">9. How Long We Keep Your Information</a></li>
+        <li><a href="#security">10. How We Protect Your Information</a></li>
+        <li><a href="#your-rights">11. Your Rights Under POPIA</a></li>
+        <li><a href="#children">12. Children's Privacy</a></li>
+        <li><a href="#links">13. Links to Other Websites</a></li>
+        <li><a href="#changes">14. Changes to This Policy</a></li>
+        <li><a href="#contact">15. Contact Us &amp; The Information Regulator</a></li>
+      </ul>
+    </aside>
+    <article class="legal-content">
+      <h2 id="introduction">1. Introduction</h2>
+
+      <p>NexridgeTech IT Solutions ("<strong>NexridgeTech</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") respects your privacy and is committed to protecting the personal information of everyone who visits our website or uses our services. This Privacy Policy explains what personal information we collect, why we collect it, how we use and protect it, and what rights you have in relation to it.</p>
+      <p>This Policy is drafted in accordance with the <strong>Protection of Personal Information Act 4 of 2013</strong> ("<strong>POPIA</strong>"), the South African law that governs the lawful processing of personal information. By using our website at <a class="inline-link" href="https://nexridgetech.co.za">nexridgetech.co.za</a> (the "<strong>Website</strong>") or otherwise providing us with your information, you acknowledge that you have read and understood this Policy.</p>
+
+      <h2 id="who-we-are">2. Who We Are (The Responsible Party)</h2>
+
+      <p>For the purposes of POPIA, NexridgeTech IT Solutions is the "responsible party" that determines why and how your personal information is processed.</p>
+      <div class="contact-box">
+        <p><strong>Business name:</strong> NexridgeTech IT Solutions</p>
+        <p><strong>Location:</strong> Mpumalanga, South Africa</p>
+        <p><strong>Email:</strong> info@nexridgetech.co.za</p>
+        <p><strong>Telephone:</strong> +27 60 743 3055</p>
+      </div>
+
+      <h2 id="information-we-collect">3. Information We Collect</h2>
+
+      <p>We only collect personal information that is necessary for the purposes described in this Policy. We collect information in the following ways:</p>
+      <h3>3.1 Information you give us directly</h3>
+      <p>When you submit an enquiry through our contact form, we collect:</p>
+      <ul>
+        <li>Your first and last name</li>
+        <li>Your email address</li>
+        <li>The type of project or service you are enquiring about</li>
+        <li>Any project details, requirements, or messages you choose to include</li>
+      </ul>
+      <p>If you contact us directly by phone, email, or WhatsApp, we collect the information you choose to share with us during that communication, which may include your name, phone number, and the content of your messages.</p>
+      <h3>3.2 Information collected automatically</h3>
+      <p>Like most websites, our Website automatically collects certain technical information when you visit, including your IP address, browser type and version, device type, operating system, pages viewed, referring website, and the date and time of your visit. We collect this information through Google Analytics, as described in the Cookies section below.</p>
+
+      <h2 id="how-we-use">4. How We Use Your Information</h2>
+
+      <p>We use the personal information we collect for the following purposes:</p>
+      <ul>
+        <li>To respond to your enquiries and provide you with quotes or proposals</li>
+        <li>To communicate with you about your project, including scheduling, updates, and support</li>
+        <li>To deliver, maintain, and improve our web development, IT support, and networking services</li>
+        <li>To understand how visitors use our Website, so that we can improve its content, performance, and user experience</li>
+        <li>To comply with our legal, accounting, and regulatory obligations</li>
+        <li>To protect the security and integrity of our Website and business systems</li>
+      </ul>
+      <p>We do not use your personal information for any purpose that is incompatible with the purpose for which it was originally collected, without first obtaining your consent where required by law.</p>
+
+      <h2 id="legal-basis">5. Our Legal Basis for Processing</h2>
+
+      <p>POPIA requires that personal information only be processed where a lawful justification exists. We rely on the following grounds:</p>
+      <ul>
+        <li><strong>Consent</strong> — where you voluntarily submit information to us, for example through our contact form, or agree to cookies on our Website</li>
+        <li><strong>Performance of a contract</strong> — where processing is necessary to prepare a quote, deliver a project, or perform a service you have engaged us for</li>
+        <li><strong>Legitimate interest</strong> — where processing helps us operate, secure, and improve our business and Website, provided this does not unreasonably override your own privacy interests</li>
+        <li><strong>Legal obligation</strong> — where we are required to process or retain information to comply with South African law</li>
+      </ul>
+
+      <h2 id="cookies">6. Cookies and Tracking Technologies</h2>
+
+      <p>Our Website uses <strong>Google Analytics</strong> to help us understand how visitors interact with our site. Google Analytics uses cookies — small text files stored on your device — to collect information such as pages visited, time spent on the site, and general location (derived from IP address).</p>
+      <p>This information is processed by Google in accordance with <a class="inline-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's own Privacy Policy</a>. We do not use this data to personally identify you.</p>
+      <p>You can control or disable cookies at any time through your browser settings, or by installing the <a class="inline-link" href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>. Please note that disabling cookies may affect certain features of our Website.</p>
+
+      <h2 id="sharing">7. Sharing Your Information With Third Parties</h2>
+
+      <p>We do not sell, rent, or trade your personal information. We only share your information with the following categories of third parties, and only to the extent necessary:</p>
+      <table class="legal-table">
+        <tr><th>Third Party</th><th>Purpose</th></tr>
+        <tr><td>FormSubmit (formsubmit.co)</td><td>Processes and delivers the contact form submissions on our Website to our email inbox</td></tr>
+        <tr><td>Google Analytics</td><td>Provides anonymised website usage statistics</td></tr>
+        <tr><td>WhatsApp (Meta Platforms, Inc.)</td><td>Facilitates direct messaging if you choose to contact us via WhatsApp; subject to WhatsApp's own privacy policy</td></tr>
+        <tr><td>Hosting &amp; email providers</td><td>Store and transmit Website data and business correspondence on our behalf</td></tr>
+      </table>
+      <p>We may also disclose personal information where required to do so by law, court order, or a competent public authority, or where necessary to protect our rights, property, or safety, or that of others.</p>
+
+      <h2 id="cross-border">8. Cross-Border Transfers</h2>
+
+      <p>Some of the third-party service providers listed above (including Google and Meta) may process or store information on servers located outside South Africa. Where this occurs, we take reasonable steps to ensure that such transfers are subject to appropriate safeguards consistent with the requirements of POPIA, including relying on service providers that are themselves subject to comparable data protection obligations.</p>
+
+      <h2 id="retention">9. How Long We Keep Your Information</h2>
+
+      <p>We retain personal information only for as long as reasonably necessary to fulfil the purpose for which it was collected, including:</p>
+      <ul>
+        <li>Enquiry and project-related information — for the duration of our business relationship, and thereafter for a reasonable period to handle any follow-up support, warranty, or legal matters</li>
+        <li>Website analytics data — as retained by Google Analytics in accordance with its own data retention settings</li>
+        <li>Financial and accounting records — for the period required under South African tax and financial record-keeping legislation</li>
+      </ul>
+      <p>Once information is no longer required, we take reasonable steps to securely delete, destroy, or de-identify it.</p>
+
+      <h2 id="security">10. How We Protect Your Information</h2>
+
+      <p>We implement reasonable technical and organisational measures to protect the personal information in our possession against loss, unauthorised access, alteration, or disclosure. These measures include restricting access to personal information to those who need it, using secure communication channels, and working with reputable third-party service providers.</p>
+      <p>While we take reasonable steps to secure your information, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+
+      <h2 id="your-rights">11. Your Rights Under POPIA</h2>
+
+      <p>As a data subject, POPIA gives you the right to:</p>
+      <ul>
+        <li>Be notified that your personal information is being collected, and why</li>
+        <li>Access the personal information we hold about you</li>
+        <li>Request that we correct, update, or delete inaccurate, irrelevant, excessive, or unlawfully obtained personal information</li>
+        <li>Object to the processing of your personal information, on reasonable grounds</li>
+        <li>Withdraw your consent to processing at any time, where processing is based on consent (this does not affect the lawfulness of processing carried out before withdrawal)</li>
+        <li>Lodge a complaint with the Information Regulator if you believe your rights under POPIA have been infringed</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us using the details in Section 15 below. We will respond to your request within a reasonable time and in accordance with our obligations under POPIA.</p>
+
+      <h2 id="children">12. Children's Privacy</h2>
+
+      <p>Our Website and services are directed at businesses and are not intended for use by children. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so that we can take appropriate steps to remove it.</p>
+
+      <h2 id="links">13. Links to Other Websites</h2>
+
+      <p>Our Website may contain links to third-party websites, including social media platforms and service providers referenced in this Policy. We are not responsible for the privacy practices or content of those external sites. We encourage you to review the privacy policy of any third-party website you visit.</p>
+
+      <h2 id="changes">14. Changes to This Policy</h2>
+
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Policy periodically.</p>
+
+      <h2 id="contact">15. Contact Us &amp; The Information Regulator</h2>
+
+      <p>If you have any questions about this Privacy Policy, or wish to exercise any of your rights under POPIA, please contact our Information Officer:</p>
+      <div class="contact-box">
+        <p><strong>NexridgeTech IT Solutions — Information Officer</strong></p>
+        <p>Email: info@nexridgetech.co.za</p>
+        <p>Telephone: +27 60 743 3055</p>
+        <p>Location: Mpumalanga, South Africa</p>
+      </div>
+      <p>If you are not satisfied with how we have handled your personal information or a request you have made, you have the right to lodge a complaint with South Africa's Information Regulator:</p>
+      <div class="contact-box">
+        <p><strong>The Information Regulator (South Africa)</strong></p>
+        <p>Website: <a class="inline-link" href="https://inforegulator.org.za" target="_blank" rel="noopener noreferrer">inforegulator.org.za</a></p>
+        <p>General enquiries: enquiries@inforegulator.org.za</p>
+        <p>POPIA complaints: POPIAComplaints@inforegulator.org.za</p>
+        <p>Telephone: 010 023 5200 &nbsp;|&nbsp; Toll-free: 0800 017 160</p>
+        <p>Physical address: Woodmead North Office Park, 54 Maxwell Drive, Woodmead, Johannesburg, 2191</p>
+      </div>
+
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          Nexridge<em>Tech</em>
+        </a>
+        <p>Premium web development, networking, digital systems and IT support for businesses across South Africa.</p>
+        <div class="footer-hours">
+          <h4>Operating Hours</h4>
+          <p>Monday-Friday: 08h00 - 17h00</p>
+          <p>Saturday: 08h00 - 13h00</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="index.html#services">Web Development</a></li>
+          <li><a href="index.html#services">IT Infrastructure</a></li>
+          <li><a href="index.html#services">Network Systems</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html#approach-section">Our Approach</a></li>
+          <li><a href="index.html#reviews">Client Success</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+27607433055">+27 60 743 3055</a></li>
+          <li><a href="mailto:info@nexridgetech.co.za">info@nexridgetech.co.za</a></li>
+          <li><a href="index.html#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 NexridgeTech IT Solutions. All rights reserved.</p>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27607433055" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
